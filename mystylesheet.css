@@ -1,0 +1,152 @@
+/* see the brand guide for colors, fonts, and images in CodePen: 
+https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/edit?usp=sharing */
+
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+  }
+  
+  .logoimg {
+    width: 10%;
+  }
+  
+  nav ul {
+    list-style: none;
+    justify-content: center;
+  }
+  
+  nav li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #F2F2F2;
+    padding: .5rem;
+  }
+
+  .flexbox-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+  }
+  
+  .flexbox-item-1 {
+    background-color: #F2F2F2;
+    flex-basis: 50%;
+    margin-left: 5%;
+  }
+  
+  .flexbox-item-2 {
+    margin:10px;
+    border: 1px solid #333;
+    background-color: #59331D;
+      flex-basis: 30%;
+    border-radius: 3%;     
+  }
+
+  /* desktop size */
+  .flexbox-container {
+    display: inline-grid;
+  }
+
+  .vertical-image {
+    display: none;
+  }
+
+  .small-horizontal-image {
+    display: none;
+  }
+
+  .big-horizontal-image {
+    display: block;
+  }
+
+  /* tablet size */
+  @media only screen and (max-width: 768px) {
+    .flexbox-container {
+      display: inline-grid;
+    }
+
+    .vertical-image {
+      display: block;
+    }
+    .small-horizontal-image {
+      display: none;
+    }
+    .big-horizontal-image {
+      display: none;
+    }
+  }
+
+  /* phone size */
+  @media only screen and (max-width: 500px) {
+    .flexbox-container {
+      display: flex;
+    }
+
+    .vertical-image {
+      display: none;
+    }
+    .small-horizontal-image {
+      display: block;
+    }
+    .big-horizontal-image {
+      display: none;
+    }
+  }
+
+  img {
+    justify-content: center;
+  }
+  
+  header {
+    background-color: #082B59;
+    border-bottom: 10px solid #D98555;
+    color: #F2F2F2; 
+    text-align: center;
+  }
+  
+  body{
+    background-color: #F2F2F2;
+    font-size: 24px;
+    font-family: lato, helvetica, sans-serif;
+    margin: 0px;   
+  }
+  
+  h1 {
+    font-size: 48px;
+    font-family: poppins, helvetica, sans-serif;
+  }
+  
+  San Francisco area {
+    color: #59331D;
+  }
+  
+  button {
+    background-color: #59331D;
+    color: #F2F2F2;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  figcaption {
+     background-color: #59331D;
+    color: #F2F2F2
+  }
+  
+  footer {
+    background-color: #082B59;
+    border-top: 10px solid #D98555;
+    color: #F2F2F2;
+    text-align: center;
+  }
